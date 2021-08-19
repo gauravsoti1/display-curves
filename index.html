@@ -60,7 +60,39 @@
         illo!
       </p>
     </section>
-    <section>
+    <div class="spacer layer2 flip"></div>
+
+    <section
+      style="margin-top: -150px; margin-bottom: -150px;"
+      class="pink blob-section"
+    >
+      <svg
+        class="blob-motion"
+        viewBox="0 0 960 300"
+        width="960"
+        height="300"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+      >
+        <g transform="translate(480.94745038961753 155.108261483456)">
+          <path
+            id="blob1"
+            d="M59 -54.4C82.7 -35.4 112.3 -17.7 113.4 1.1C114.5 19.8 86.9 39.6 63.3 52.4C39.6 65.3 19.8 71.1 -7.8 78.9C-35.4 86.7 -70.7 96.4 -91.4 83.5C-112 70.7 -118 35.4 -114.3 3.8C-110.5 -27.8 -97 -55.6 -76.3 -74.6C-55.6 -93.6 -27.8 -103.8 -5.1 -98.7C17.7 -93.7 35.4 -73.4 59 -54.4"
+            fill="#BB004B"
+          ></path>
+        </g>
+        <g
+          transform="translate(478.81190669268767 167.79144935800525)"
+          style="visibility: hidden;"
+        >
+          <path
+            id="blob2"
+            d="M63.6 -69.8C82.5 -44.8 97.7 -22.4 103.6 5.9C109.5 34.2 106 68.4 87.2 80.9C68.4 93.4 34.2 84.2 8.2 75.9C-17.7 67.7 -35.4 60.4 -56.2 47.9C-77 35.4 -101 17.7 -103.6 -2.6C-106.2 -22.9 -87.4 -45.7 -66.6 -70.7C-45.7 -95.7 -22.9 -122.9 -0.2 -122.6C22.4 -122.4 44.8 -94.8 63.6 -69.8"
+            fill="#BB004B"
+          ></path>
+        </g>
+      </svg>
       <h1>Nice Curves</h1>
       <p>
         Aperiam quam maiores minima voluptatum, corrupti asperiores fugit natus
@@ -69,6 +101,8 @@
         cumque nesciunt?
       </p>
     </section>
+    <div class="spacer layer2"></div>
+
     <section>
       <h1>Nice Curves</h1>
       <p>
@@ -96,5 +130,22 @@
         possimus quae consequuntur?
       </p>
     </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/kute.js/1.6.1/kute.min.js"
+      integrity="sha512-DeLO4mdijNCQ3uOZDb1u+sUadgQUQnPr3zlPejMZBNbLi9rreaGwBjIJXYPU8WNJpRWb9LG6RpP6kdodXw6AGg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      // const tween = KUTE.allFromTo(
+      //   ".blob-motion",
+      //   { path: "#blob1" },
+      //   { path: "#blob2" },
+      //   { repeat: 999, duration: 3000, yoyo: true }
+      // );
+      // tween.start();
+      const tween = KUTE.fromTo("#blob1", { opacity: 1 }, { opacity: 0 });
+      tween.start();
+    </script>
   </body>
 </html>

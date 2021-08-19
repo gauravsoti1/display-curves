@@ -99,7 +99,7 @@ section {
 }
 
 .spacer {
-  aspect-ratio: 960/540;
+  aspect-ratio: 960/300;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -108,4 +108,23 @@ section {
 
 .layer1 {
   background-image: url("./layer1.svg");
+}
+
+.flip {
+  transform: rotate(180deg);
+}
+
+.layer2 {
+  background-image: url("./layer2.svg");
+}
+
+.blob-motion {
+  position: absolute;
+  transform: translateY(-20%);
+  z-index: 0;
+}
+
+.blob-section h1,
+p {
+  z-index: 1;
 }
